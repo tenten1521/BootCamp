@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISCP Employee Registration Form</title>
+
+  </head>
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ISCP_Logo.png"
+      width="400px"
+    /><br />
+    
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/aCUhfPAyDHY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <h1>Basic Information</h1>
+    <form>
+        <table >
+            <tr>
+                <td>
+                <label for="firstname">First name:</label>
+                <td>
+                    <input type="text" id ="firstname" name="firstname" placeholder="ex. Juan" autocomplete="off" required/>
+               </td>
+             </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="last_name">Last Name:</label>
+                    <td><input type="text" id="last_name" name="last_name" placeholder="ex. de la cruz" autocomplete="off" required/>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="place_of_birth">Place of Birth:</label>
+                    <td><input type="text" id="place_of_birth" name="place_of_birth"  placeholder="ex. Calamba Laguna" autocomplete="off" required/>
+                    </td>
+                </td>
+            </tr>
+   
+            <tr>
+                <td><label for="Status">Civil Status</label>
+               <td> <select name="Status" id="status">
+                <option>Please Select one</option>
+                <option value="single">single</option>
+                <option value="married">married</option>
+                <option value="widowed">widowed</option>
+                <option value="seperated">seperated</option>
+                </select>
+                    </td>
+                 </td>
+            </tr>       
+            <tr>
+                <td>
+                    <label type="radio">Gender:</label>
+              <td>  
+                <input type="radio" name="Gender" value="male" /> male
+              
+                <input type="radio" name="Gender" value="female" /> female
+           
+                <input type="radio" name="Gender" value="other" /> other 
+                 </td>
+                     </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mother's maiden name">Mother's maiden name:</label>
+                    <td>
+                        <input type="text" id="Mother's maiden name" name="Mother's maiden name" placeholder="ex. Juan" />
+                    </td>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                  <label for="Father's name">Father's name:</label>
+                  <td>
+                      <input type="text" id="Father's name" name="Father's name" placeholder="ex. Juan"/>
+                  </td>
+              </td>
+          </tr>
+     </table>
+    <h2>Contact Information</h2>
+    <table>
+       <tr>
+        <td><label for="email">Email address:</label>
+             <td> <input type="email" id="email" name="email" 
+        placeholder="Ex. Juandelacruz@gmail.com" autocomplete="off" required/></td>
+      </td>
+      </tr>
+              <tr>
+                <td><label for="phone">Mobile Number :</label>
+                <td>
+                    <input type="phone" placeholder="ex.9123456781" name="phone">
+                  </td>
+                </td>
+              </td>
+            </tr>
+      </tr>
+              <tr>
+                <td><label for="telephone">Telephone Number :</label>
+                    <td><input type="telephone"id="telephone" placeholder="ex.(045) 982-6613 " name="telephone">
+                  </td>
+                </td>
+              </td>
+            </tr>
+        </table>
+  <h2>Address</h2>
+  <table>
+    
+      
+      <tr>
+        <td><label for="street_num">Street Number:</label>
+          <td><input type="text" id="street_num" name="street_num"/>
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="street_name">Street Name:</label>
+          <td><input type="text" id="street_name" name="street_name"/>
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td><label id="barangayId" for="barangay" >Barangay:</label>
+          <td><select name="barangay" id="barangay">
+            <option>Please Select one</option>
+            <option value="Barangay Uno">Barangay Uno</option>
+            <option value="Barangay Dose">Barangay Dose</option>
+            <option value="Barangay Tress">Barangay Tress</option>
+            <option value="Barangay Quatro">Barangay Quatro</option>
+          </select>
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td><label id="cityId" for="city_town" >City Or Town:</label>
+          <td><select name="city_town" id="city_town">
+            <option>Please Select one</option>
+            <option value="Calamba">Calamba</option>
+            <option value="Cabuyao">Cabuyao</option>
+            <option value="Los banos">Los banos</option>
+            <option value="bay">Bay</option>
+          </td>
+        </td>
+      </tr>
+      <tr>
+        <td><label id="provinceId" for="province" >Province:</label>
+          <td><select name="province" id="province" >
+            <option>Please Select one</option>
+            <option value="Laguna">benguet</option>
+            <option value="metro_manila">Metro Manila</option>
+            <option value="capiz">Capiz</option>
+            <option value="zambuanga del sure">Zambuanga</option>
+          </select>
+          </td>
+        </td>
+      </tr>
+      <tr>
+          <td><label text="fulladdrs">Full Address</label>
+            <td><input text="text" id="fulladdrs" name="fulladdrs" placeholder="ex. 123 looc Cabuyao laguna"/>
+              
+            </td>
+
+          </td>
+      </tr>
+      
+  </table>
+  <h2>Government information</h2>
+  <table>
+    <tr>
+      <td><label for="sss_id">SSS ID:</label>
+        <td><input type="text" id="sss_id" name="sss_id"/>
+        </td>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="pag_ibig_id">Pag-Ibig ID:</label>
+        <td><input type="text" id="pag_ibig_id" name="pag_ibig_id"/>
+        </td>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="PhilHealth _id">PhilHealth ID:</label>
+        <td><input type="text" id="PhilHealth _id" name="PhilHealth _id"/>
+        </td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="Idpicture" id="Idpicture">Upload 2x2 Picture</label>
+     <td> <input type="file" name="Idpcicture" accept="image/*" /></td>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="govern_picture" id="govern_picture">Upload picture of government ID</label>
+     <td> <input type="file" name="govern_picture" accept="image/*" /></td>
+      </td>
+    </tr>
+  </table>
+  <h2>Account information</h2>
+  <table>
+          <tr>
+            <td>
+              <label for="username">Username:</label>
+              <td>
+                <input
+        type="text"
+        name="username"
+        id="username"
+        autocomplete="off"
+        required
+      />
+              </td>
+            </td>
+          <tr>
+          <td> 
+            <label for="password">Password:</label>
+          
+          <td>
+            <input
+        type="password"
+        name="password"
+        id="password"
+        autocomplete="off"
+        placeholder="must be 8 letter"
+        required
+      />
+          </td> 
+          </tr>
+          </tr>
+          <tr>
+            <td> 
+              <label for="con_password">Confirm Password:</label>
+            
+            <td>
+              <input
+          type="password"
+          name="con_password"
+          id="con_password"
+          autocomplete="off"
+          placeholder="must be 8 letter"
+          required
+        />
+            </td> 
+            </tr>
+            </tr>
+          <tr>
+            <td>
+              <label for="profpic" id="profpic">Upload profile image</label>
+           <td> 
+            <input type="file" name="profpic" accept="image/*" />
+            </td>
+            </td>
+          </tr>
+
+    </table>
+    <h2>Have you experienced any of the following in the last 30 days?</h2>
+    <table>
+      <tr>
+        <td>
+      <input type="checkbox" name="Coughing," /> Coughing,<br />
+      <input type="checkbox" name="Fever" /> Fever<br />
+      <input type="checkbox" name="Headache" /> Headache<br />
+      <input type="checkbox" name="Common cold" />Common cold<br />
+      <input type="checkbox" name="Body ache" />Body ache<br />
+      <input type="checkbox" name="Sore throat" />Sore throat<br />
+      <input type="checkbox" name="Tiredness" />Tiredness<br />
+      <input type="checkbox" name="Loss of smell" />Loss of smell<br />
+        </td>
+      </tr>
+    </table>
+    <h2>Give a short description about yourself.</h2>
+    <textarea
+        id="Comment"
+        name="Comment"
+        placeholder="Give a short description about yourself"
+        style="width: 400px"
+        rows="10"
+      ></textarea><br/>
+    </form>
+  </body>
+</html>

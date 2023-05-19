@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Delivery Service</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      header {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      nav a {
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+        padding: 10px;
+      }
+      
+      nav a:hover {
+        background-color: #ddd;
+      }
+      
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      
+      form {
+        display: inline-block;
+        text-align: left;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type=text], input[type=email], input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      input[type=submit] {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Food Delivery Service</h1>
+    </header>
+    
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Menu</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    
+    <section>
+      <h2>Order Now</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        
+        <label for="food">Food:</label>
+        <select id="food" name="food">
+          <option value="pizza">Pizza</option>
+          <option value="burger">Burger</option>
+          <option value="pasta">Pasta</option>
+        </select>
+        
+        <input type="submit" value="Order Now">
+      </form>
+    </section>
+    
+    <section>
+      <h2>Our Menu</h2>
+      <div>
+        <img src="pizza.jpg" alt="Pizza">
+        <h

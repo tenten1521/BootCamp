@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form document</title>
+    <style>
+      label {
+        display: block;
+        
+      }
+      input {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Online Voting</h1>
+    <form>
+      <label for="first_name">First name:</label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        placeholder="ex.Juan"
+      />
+      <label for="lastName">Last name:</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="ex.de la Cruz">
+        <label for="email">email address:</label>
+        <input type="email" id="email" name="email" 
+        placeholder="Ex. Juandelacruz@gmail.com" autocomplete="off" required/>
+        <input type="date">
+        <input type="number">
+        <input type="range" min="0" max="20" step="2" value="3">
+        <input type="month">
+      <label for="province">province</label>
+      <select name="province" id="province">
+        <option>Please Select one</option>
+        <option value="benguet">benguet</option>
+        <option value="metro_manila">metro manila</option>
+        <option value="capiz">capiz</option>
+        <option value="zambuanga del sure">zambuanga</option>
+      </select>
+      <br />
+      <label for="password">password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="8 letter "
+        style="width: 100px"
+      />
+      <label for="con_password">confirm password</label>
+      <input
+        type="password"
+        id="con_password"
+        name="con_password"
+        placeholder="8 letter "
+        style="width: 100px"
+      />
+      <label for="Idpicture" id="Idpicture">upload Idpcicture</label>
+      <input type="file" name="Idpcicture" accept="image/*" />
+
+      <label for="Comment"> Comment and suggentions:</label>
+      <textarea
+        id="Comment"
+        name="Comment"
+        placeholder=" Help us improve our service by providing us with suggention!"
+        style="width: 400px"
+        rows="10"
+      ></textarea><br/>
+      <input type="submit"></input>
+      <h2>Senator</h2>
+      <input type="checkbox" name="bong_revilla" /> Bong Revilla <br />
+      <input type="checkbox" name="Lary_Gadon" /> Larry Gadon<br />
+      <input type="checkbox" name="allan_cayetano" /> Allan Cayetano<br />
+      <input type="checkbox" name="raffy_tulfo" checked="true" /> Raffy Tulfo<br />
+
+      <h2>President</h2>
+      <input type="radio" name="President" value="bong_marcos" /> Bong Bong
+      Marcos <br />
+      <input type="radio" name="President" value="Leni_robredo" /> Leni Robredo
+      <br />
+      <input type="radio" name="President" value="rastaman" /> Rastaman <br />
+      <input type="submit" value="submit Vote"></submit><br />
+      <input type="image" name="imagebutton" src="" />
+    </form>
+  </body>
+</html>

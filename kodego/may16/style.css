@@ -1,0 +1,7 @@
+.cellbg {
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: visible;
+  background-position: fixed;
+  transform: scaleX(1);
+}

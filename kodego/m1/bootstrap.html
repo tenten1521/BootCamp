@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .container {
+        font-size: 100%;
+        width: 55%;
+        overflow: hidden;
+        padding-top: 100px;
+      }
+      .container .text {
+        position: relative;
+        color: #3f18ec;
+        font-size: 50px;
+        font-weight: 600;
+      }
+      .container .text.first-text {
+        color: rgb(0, 0, 0);
+      }
+      .text.sec-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+        border-left: 2px solid #4070f4;
+        animation: animate 4s steps(12) infinite;
+      }
+      @keyframes animate {
+        40%,
+        60% {
+          left: calc(100% + 100px);
+        }
+        100% {
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pic_container col-lg-2">
+      <img src="trikelogo.gif" alt="tricycle" class="image" />
+      <div class="container" class="col-lg-3 offset-lg-2">
+        <span class="text first-text">You Need</span>
+        <span class="text sec-text">Ride</span>
+        <script>
+          const text = document.querySelector(".sec-text");
+
+          const textload = () => {
+            setTimeout(() => {
+              text.textContent = "Ride";
+            }, 0);
+            setTimeout(() => {
+              text.textContent = "Appliances";
+            }, 4000);
+            setTimeout(() => {
+              text.textContent = "Tools";
+            }, 8000); //1s = 1000 miliseconds
+          };
+
+          textload();
+          setInterval(textload, 12000);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISCP Employee Registration Form</title>
+    <style>
+      label,
+      input {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      label {
+        width: 155px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ISCP_Logo.png"
+      width="400px"
+    /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/aCUhfPAyDHY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <h1>Basic Information</h1>
+    <form>
+      <label for="firstname">First name:</label>
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="ex. Juan"
+        autocomplete="off"
+        required
+      /><br />
+
+      <label for="last_name">Last Name:</label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        placeholder="ex. de la cruz"
+        autocomplete="off"
+        required
+      /><br />
+
+      <label for="place_of_birth">Place of Birth:</label>
+      <input
+        type="text"
+        id="place_of_birth"
+        name="place_of_birth"
+        placeholder="ex. Calamba Laguna"
+        autocomplete="off"
+        required
+      /><br />
+      <label for="Status">Civil Status</label>
+      <select name="Status" id="status">
+        <option>Please Select one</option>
+        <option value="single">single</option>
+        <option value="married">married</option>
+        <option value="widowed">widowed</option>
+        <option value="seperated">seperated</option></select
+      ><br />
+
+      <label type="radio">Gender:</label>
+      <input type="radio" name="Gender" value="male" /> male
+      <input type="radio" name="Gender" value="female" /> female
+      <input type="radio" name="Gender" value="other" /> other
+      <br />
+      <label for="Mother's maiden name">Mother's maiden name:</label>
+      <input
+        type="text"
+        id="Mother's maiden name"
+        name="Mother's maiden name"
+      /><br />
+
+      <label for="Father's name">Father's name:</label>
+      <input type="text" id="Father's name" name="Father's name" /><br />
+      <h2>Contact Information</h2>
+      <label for="email">Email address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Ex. Juandelacruz@gmail.com"
+        autocomplete="off"
+        required
+      /><br />
+      <label for="phone">Contect Number Mobile:</label>
+      <input type="phone" placeholder="ex.09123456781" name="phone" /><br />
+
+      <label for="telephone">Contect Number telephone:</label>
+      <input
+        type="telephone"
+        id="telephone"
+        placeholder="ex.(046) 402-0641"
+        name="telephone"
+      /><br />
+      <h2>Address</h2>
+      <label for="street_num">Street Number:</label>
+      <input type="text" id="street_num" name="street_num" /><br />
+
+      <label for="street_name">Street Name:</label>
+      <input type="text" id="street_name" name="street_name" /><br />
+
+      <label for="barangay">Barangay:</label>
+      <select name="barangay" id="barangay">
+        <option>Please Select one</option>
+        <option value="Barangay Uno">Barangay Uno</option>
+        <option value="Barangay Dose">Barangay Dose</option>
+        <option value="Barangay Tress">Barangay Tress</option>
+        <option value="Barangay Quatro">Barangay Quatro</option></select
+      ><br />
+
+      <label for="city_town">City Or Town:</label>
+      <select name="city_town" id="city_town">
+        <option>Please Select one</option>
+        <option value="Calamba">Calamba</option>
+        <option value="Cabuyao">Cabuyao</option>
+        <option value="Los banos">Los banos</option>
+        <option value="bay">Bay</option></select
+      ><br />
+
+      <label for="province">Province:</label>
+      <select name="province" id="province">
+        <option>Please Select one</option>
+        <option value="Laguna">benguet</option>
+        <option value="metro_manila">Metro Manila</option>
+        <option value="capiz">Capiz</option>
+        <option value="zambuanga del sure">Zambuanga</option></select
+      ><br />
+
+      <h2>Government information</h2>
+      <label for="sss_id">SSS ID:</label>
+      <input type="text" id="sss_id" name="sss_id" /><br />
+
+      <label for="pag_ibig_id">Pag-Ibig ID:</label>
+      <input type="text" id="pag_ibig_id" name="pag_ibig_id" /><br />
+
+      <label for="PhilHealth _id">PhilHealth ID:</label>
+      <input type="text" id="PhilHealth _id" name="PhilHealth _id" /><br />
+
+      <label for="Idpicture" id="Idpicture">Upload 2x2 Picture</label>
+      <input type="file" name="Idpcicture" accept="image/*" /><br />
+
+      <label for="govern_picture" id="govern_picture"
+        >Upload picture of government ID</label
+      >
+
+      <input type="file" name="govern_picture" accept="image/*" /><br />
+
+      <h2>Account information</h2>
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        autocomplete="off"
+        required
+      /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        autocomplete="off"
+        placeholder="must be 8 letter"
+        required
+      /><br />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="keyframe.css" />
+    <link rel="icon" type="image/x-icon" href="trike1.png" />
+    <title>ARKILA</title>
+  </head>
+  <body>
+    <nav class="menu-container">
+      <!-- Arikla menu -->
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!-- logo -->
+      <a
+        href="file:///C:/Users/J-A/Desktop/kodego/m1/sample.html"
+        class="menu-logo"
+      >
+        <img src="images/trikelogo.gif" alt="Lets Ride" />
+      </a>
+
+      <!-- menu items -->
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#About Arkila"> About Arkila </a>
+          </li>
+          <li>
+            <a href="#pricing"> User Service </a>
+          </li>
+          <li>
+            <a href="#blog"> Arkila for Business </a>
+          </li>
+          <li>
+            <a href="#docs"> Contact Us </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#signup"> Sign-up </a>
+          </li>
+          <li>
+            <a href="#login"> Login </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="pic_container col-lg-7 offset-lg-7">
+      <img src="images/trikelogo.gif" alt="tricycle" class="image" />
+    </div>
+    <div class="container">
+      <div class="col">
+        <span class="text first-text">You Need</span>
+        <span class="text sec-text">Ride</span>
+        <script>
+          const text = document.querySelector(".sec-text");
+
+          const textload = () => {
+            setTimeout(() => {
+              text.textContent = "Ride";
+            }, 0);
+            setTimeout(() => {
+              text.textContent = "Appliances";
+            }, 4000);
+            setTimeout(() => {
+              text.textContent = "Tools";
+            }, 8000); //1s = 1000 miliseconds
+          };
+
+          textload();
+          setInterval(textload, 12000);
+        </script>
+      </div>
+      <div class="h11">
+        <h1>Everything with ARKILA</h1>
+      </div>
+      <div id="p11">
+        <p>
+          Arkila is a tricyle hailing platform that helps Filipino beat the
+          traffic congested streets of the Philippines and save your precious
+          time through riding-hailing delivery or purchase.
+        </p>
+      </div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="img_5terre.jpg">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400" />
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img_forest.jpg">
+        <img src="img_forest.jpg" alt="Forest" width="600" height="400" />
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="img_lights.jpg">
+        <img
+          src="img_lights.jpg"
+          alt="Northern Lights"
+          width="600"
+          height="400"
+        />
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+    <div id="h12">
+      <h1>Our Services</h1>
+    </div>
+  </body>
+</html>

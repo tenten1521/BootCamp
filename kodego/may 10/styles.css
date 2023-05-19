@@ -1,0 +1,192 @@
+Body {
+  font-family: "Tahoma";
+  margin: 0px;
+  background-image: url(https://thumbs.dreamstime.com/b/grainy-white-paper-surface-as-texture-background-close-up-macro-200678301.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0px;
+}
+
+.table {
+  background-color: rgb(70, 130, 180);
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 1%;
+  font-weight: bold;
+}
+.navbar {
+  list-style: none;
+  border-collapse: collapse;
+  justify-content: center;
+  display: flex;
+  font-weight: bold;
+}
+.navbar li a {
+  text-decoration: none;
+  padding: 120px 120px 120px 120px;
+}
+.navbar li a:hover {
+  color: rgb(0, 0, 139);
+}
+
+.mines_main {
+  text-align: center;
+}
+.rem1 {
+  mix-blend-mode: multiply;
+}
+.voice1 {
+  font-weight: bold;
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+.mines1 {
+  color: rgb(70, 130, 180);
+  font-size: 350%;
+  margin-bottom: 40px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.demo {
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+td {
+  text-align: center;
+}
+#p1 {
+  font-size: 250%;
+  padding-left: 20px;
+  color: rgb(70, 130, 180);
+  font-weight: bold;
+}
+.p2 {
+  font-size: 300%;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 300;
+}
+#p5 {
+  margin-left: 20px;
+  margin-top: 150px;
+}
+
+a.p2:link {
+  color: blue;
+}
+
+a.p2:visited {
+  color: orange;
+}
+
+a.p2:hover {
+  color: magenta;
+}
+
+a.p2:active {
+  color: lime;
+}
+
+#p3 {
+  padding-left: 20px;
+  letter-spacing: 2px;
+  font-size: 140%;
+}
+#p4 {
+  padding-left: 20px;
+  letter-spacing: 2px;
+  font-size: 140%;
+}
+.pastor1 {
+  text-align: left;
+}
+
+.low1 {
+  display: flex;
+  justify-content: center;
+}
+
+.im4 {
+  float: left;
+  margin-top: 50px;
+  margin-left: 300px;
+  mix-blend-mode: multiply;
+}
+.im2 {
+  float: right;
+  margin: 50px;
+  margin-right: 300px;
+  mix-blend-mode: multiply;
+}
+#li1 {
+  list-style-type: none;
+  font-size: 135%;
+}
+.w1 table,
+th,
+td {
+  text-align: center;
+  font-size: 130%;
+  display: flex;
+  justify-content: center;
+  border: 4px dotted;
+  border-collapse: collapse;
+}
+.w1 tr:nth-child(even) {
+  background-color: lightgray;
+}
+.w1 tr:nth-child(odd) {
+  background-color: white;
+}
+.w1 tr:hover {
+  background-color: #fed8b1;
+}
+.w1 {
+  margin-top: 60px;
+}
+
+.gallery {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.image-container:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 3px solid #252525;
+}
+
+.description {
+  margin-top: 5px;
+  padding: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+#fot1 {
+  text-align: center;
+  font-size: 90%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+#foot1 {
+  text-align: center;
+  font-weight: 120%;
+  margin-top: 150px;
+}
+#foot2 {
+  text-align: center;
+  font-weight: 120%;
+}
