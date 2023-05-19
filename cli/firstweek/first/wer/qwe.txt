@@ -1,0 +1,13 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 86D3-9BC5
+
+ Directory of C:\Users\J-A\Desktop\kodego folder\first week\wer
+
+05/04/2023  01:53 PM    <DIR>          .
+05/04/2023  01:53 PM    <DIR>          ..
+05/04/2023  01:47 PM                 0 bago2.text
+05/04/2023  01:53 PM               471 bago2.txt
+05/04/2023  01:53 PM                 0 qwe.txt
+05/04/2023  01:52 PM                15 qwerty
+               4 File(s)            486 bytes
+               2 Dir(s)  49,859,497,984 bytes free
