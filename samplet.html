@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="text first-text">Get to</span>
+      <span class="text sec-text">School</span>
+    </div>
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textload = () => {
+        setTimeout(() => {
+          text.textContent = "School";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Meeting";
+        }, 4000);
+        setTimeout(() => {
+          text.textContent = "Work";
+        }, 8000); //1s = 1000 miliseconds
+      };
+
+      textload();
+      setInterval(textload, 12000);
+    </script>
+  </body>
+</html>
