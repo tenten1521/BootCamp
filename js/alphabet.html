@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with the Alphabet</title>
+</head>
+<body>
+ <h1>Vowel Counter</h1>   
+ <button onclick="VowelsAndConsunant()">Enter Vowel</button>
+<Script>
+    function VowelsAndConsunant(){
+        let word = prompt("enter a word:");
+
+        if(word.trim() === ""){
+            console.error("error: empty word.");
+            return;
+        }
+        let vowelcounts = countvowels(word);
+        let consonantcounts = countconsonant(word);
+        console.log("vowels: " + vowelcounts);
+        console.log("consonant: "+ consonantcounts)
+    }
+
+function countvowels(word){
+    let vowels ="aeiou";
+    let count = 0;
+
+    for( let i =0; i < word.length; i++){
+        let letter = word[i].toLowerCase();
+
+        if(vowels.indexOf(letter) !== -1){
+            count++;
+        }
+    }
+    return count;
+}
+function countconsonant(word){
+    let consonant = "bcdfghjklmnpqrstvwxyz";
+    let count = 0;
+
+    for(let i =0; i < word.length; i++){
+        let letter = word[i].toLowerCase();
+
+        if(consonant.indexOf(letter) !== -1){
+            count++;
+        }
+    }
+    return count;
+}
+
+
+</Script>
+
+
+</body>
+</html>
